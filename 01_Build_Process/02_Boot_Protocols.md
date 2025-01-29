@@ -263,7 +263,7 @@ Next we'll need to create space for our stack (stivale2 requires us to provide o
 //8K for the initial stack, a reasonable default
 static uint8_t init_stack[0x2000];
 
-__attribute__((section(".stivale2hdr)))
+__attribute__((section(".stivale2hdr")))
 static stivale2_header stivale2_hdr =
 {
     .entry_point = 0,
